@@ -47,7 +47,7 @@ document.getElementById('footer-placeholder').innerHTML = `
     
     <div class="footer-links">
         <a href="https://www.frognbear.com/index.html">Home</a>
-        <a href="https://www.frognbear.com/pages/socials.html">Socials</a>
+        <a href="https://www.frognbear.com/socials.html">Socials</a>
           
     </div>
     <p>&copy; 2026 Frog and Bear Publishing™. All rights reserved.</p>
