@@ -1,1 +1,124 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌼</text></svg>">
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Links</title>
+    <style>
+        body {
+            background-color: PaleVioletRed;
+            font-family: Luminari, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            color: GreenYellow;
+        
+    
+    min-height: calc(100vh - 50px);
+    min-height: calc(100dvh - 50px); 
+    margin: 0;
+}
+.jacquard-12-regular {
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+        .iceberg-regular {
+  font-family: "Iceberg", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#footer-placeholder {
+    margin-top: auto; /* Pushes footer to the bottom */
+    width: 100%;
+}
+
+
+.footer-links a {
+    display: inline-block !important; 
+    margin: 0 10px;
+    font-size: 0.9rem; /* Smaller footer text */
+}
+
+.shimmer-title {
+    
+    font-family: "Iceberg", system-ui; /* Add this line */
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    /* ADD THE BORDER HERE */
+    -webkit-text-stroke: .5px #008080; /* Teal Border */
+    
+    background: linear-gradient(
+        to right, 
+        #01F9C6 20%, 
+        #FF2D20 40%, 
+        #FF2D20 60%, 
+        #01F9C6 80%
+    );
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shine 3s linear infinite;
+}
+
+            
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        /* Basic Link Styling */
+        nav {
+            margin-top: 20px;
+        }
+
+        a {
+            display: block;
+            color: GreenYellow;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: LimeGreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="shimmer-title">Follow Us</h1>
+
+    <nav><strong>
+        <a href="https://www.youtube.com/@frognbearpub">YouTube</a>
+        <a href="https://www.twitch.com/frognbear">Twitch</a>
+        <a href="https://www.instagram.com/frogandbearpub">Instagram</a>
+        
+    </strong></nav>
+
+
+
+    <!-- At the bottom of your body -->
+<div id="footer-placeholder"></div>
+
+<!-- Link your JavaScript file -->
+<script src="script-footer.js"></script>
+    </body>
+</html>
