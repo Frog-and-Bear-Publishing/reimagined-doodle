@@ -50,8 +50,7 @@ document.getElementById('footer-placeholder').innerHTML = `
         <a href="https://www.frognbear.com/socials.html">Socials</a>
           
     </div>
-    <p>&copy; 2026 Frog and Bear Publishing™. All rights reserved.</p>
-    
-    <p>&copy; Weird games for wonderful people 🐸🐻™</p>
+    <p>&copy; 2026 Frog and Bear Publishing™. All rights reserved.
+    &copy; Weird games for wonderful people 🐸🐻™</p>
     
 </footer>`;
