@@ -52,4 +52,6 @@ document.getElementById('footer-placeholder').innerHTML = `
     </div>
     <p>&copy; 2026 Frog and Bear Publishing™. All rights reserved.</p>
     
+    <p>&copy; Weird games for wonderful people 🐸🐻™</p>
+    
 </footer>`;
