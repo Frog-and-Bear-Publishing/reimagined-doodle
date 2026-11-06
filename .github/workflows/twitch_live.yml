@@ -1,0 +1,43 @@
+name: Update Twitch Status
+
+on:
+  schedule:
+    # Runs automatically every 5 minutes (GitHub schedules can sometimes be delayed slightly)
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # Allows you to trigger this manually from the Actions tab
+
+jobs:
+  update-status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch Twitch Live Status
+        env:
+          CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+          BROADCASTER: "frognbear" # Change to your twitch channel username
+        run: |
+          # 1. Get an App Access Token from Twitch
+          TOKEN_RESP=$(curl -s -X POST "https://twitch.tv{CLIENT_ID}&client_secret=${CLIENT_SECRET}&grant_type=client_credentials")
+          ACCESS_TOKEN=$(echo $TOKEN_RESP | sed -n 's/.*"access_token":"\([^"]*\)".*/\1/p')
+
+          # 2. Query the Twitch Streams API
+          STREAM_RESP=$(curl -s -H "Client-ID: ${CLIENT_ID}" -H "Authorization: Bearer ${ACCESS_TOKEN}" "https://twitch.tv{BROADCASTER}")
+
+          # 3. Parse the data and save it as a local json file
+          if [[ "$STREAM_RESP" == *"\"started_at\":\""* ]]; then
+            STARTED_AT=$(echo $STREAM_RESP | sed -n 's/.*"started_at":"\([^"]*\)".*/\1/p')
+            echo "{\"is_live\": true, \"started_at\": \"$STARTED_AT\"}" > stream.json
+          else
+            echo "{\"is_live\": false, \"started_at\": null}" > stream.json
+          fi
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stream.json
+          # Only commit if the file actually changed to avoid endless empty history loops
+          git diff-index --quiet HEAD || (git commit -m "Update live stream timeline data" && git push)
