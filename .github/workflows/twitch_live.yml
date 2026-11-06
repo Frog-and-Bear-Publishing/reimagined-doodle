@@ -19,18 +19,18 @@ jobs:
           CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
           BROADCASTER: "frognbear" # Change to your twitch channel username
         run: |
-          # 1. Get an App Access Token safely from Twitch
-          TOKEN_RESP=$(curl -s -X POST "https://twitch.tv" \
+          # 1. Fetch Token from id.twitch.tv (Fixed endpoint subdomain)
+          TOKEN_RESP=$(curl -s -X POST "https://id.twitch.tv/oauth2/token" \
             -d "client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&grant_type=client_credentials")
           
           ACCESS_TOKEN=$(echo "$TOKEN_RESP" | jq -r '.access_token')
 
-          # 2. Query the Twitch Streams API
+          # 2. Query data from api.twitch.tv (Fixed endpoint subdomain)
           STREAM_RESP=$(curl -s -H "Client-ID: ${CLIENT_ID}" \
             -H "Authorization: Bearer ${ACCESS_TOKEN}" \
             "https://twitch.tv{BROADCASTER}")
 
-          # 3. Use jq to robustly check if the stream array has data
+          # 3. Use jq to parse the active stream array
           IS_LIVE=$(echo "$STREAM_RESP" | jq '.data | length > 0')
 
           if [ "$IS_LIVE" = "true" ]; then
