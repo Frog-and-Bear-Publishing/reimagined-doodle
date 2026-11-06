@@ -19,20 +19,27 @@ jobs:
           CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
           BROADCASTER: "frognbear" # Change to your twitch channel username
         run: |
-          # 1. Get an App Access Token from Twitch
-          TOKEN_RESP=$(curl -s -X POST "https://twitch.tv{CLIENT_ID}&client_secret=${CLIENT_SECRET}&grant_type=client_credentials")
-          ACCESS_TOKEN=$(echo $TOKEN_RESP | sed -n 's/.*"access_token":"\([^"]*\)".*/\1/p')
+          # 1. Get an App Access Token safely from Twitch
+          TOKEN_RESP=$(curl -s -X POST "https://twitch.tv" \
+            -d "client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&grant_type=client_credentials")
+          
+          ACCESS_TOKEN=$(echo "$TOKEN_RESP" | jq -r '.access_token')
 
           # 2. Query the Twitch Streams API
-          STREAM_RESP=$(curl -s -H "Client-ID: ${CLIENT_ID}" -H "Authorization: Bearer ${ACCESS_TOKEN}" "https://twitch.tv{BROADCASTER}")
+          STREAM_RESP=$(curl -s -H "Client-ID: ${CLIENT_ID}" \
+            -H "Authorization: Bearer ${ACCESS_TOKEN}" \
+            "https://twitch.tv{BROADCASTER}")
 
-          # 3. Parse the data and save it as a local json file
-          if [[ "$STREAM_RESP" == *"\"started_at\":\""* ]]; then
-            STARTED_AT=$(echo $STREAM_RESP | sed -n 's/.*"started_at":"\([^"]*\)".*/\1/p')
+          # 3. Use jq to robustly check if the stream array has data
+          IS_LIVE=$(echo "$STREAM_RESP" | jq '.data | length > 0')
+
+          if [ "$IS_LIVE" = "true" ]; then
+            STARTED_AT=$(echo "$STREAM_RESP" | jq -r '.data[0].started_at')
             echo "{\"is_live\": true, \"started_at\": \"$STARTED_AT\"}" > stream.json
           else
             echo "{\"is_live\": false, \"started_at\": null}" > stream.json
           fi
+
 
       - name: Commit and Push changes
         run: |
