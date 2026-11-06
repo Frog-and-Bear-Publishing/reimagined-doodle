@@ -2,9 +2,8 @@ name: Update Twitch Status
 
 on:
   schedule:
-    # Runs automatically every 5 minutes (GitHub schedules can sometimes be delayed slightly)
     - cron: '*/5 * * * *'
-  workflow_dispatch: # Allows you to trigger this manually from the Actions tab
+  workflow_dispatch: 
 
 jobs:
   update-status:
@@ -19,18 +18,18 @@ jobs:
           CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
           BROADCASTER: "frognbear" # Change to your twitch channel username
         run: |
-          # 1. Fetch Token from id.twitch.tv (Fixed endpoint subdomain)
-          TOKEN_RESP=$(curl -s -X POST "https://id.twitch.tv/oauth2/token" \
+          # 1. Fetch App Access Token
+          TOKEN_RESP=$(curl -s -X POST "https://twitch.tv" \
             -d "client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&grant_type=client_credentials")
           
           ACCESS_TOKEN=$(echo "$TOKEN_RESP" | jq -r '.access_token')
 
-          # 2. Query data from api.twitch.tv (Fixed endpoint subdomain)
+          # 2. Query Live Stream Endpoint (Fixed URL layout structure)
           STREAM_RESP=$(curl -s -H "Client-ID: ${CLIENT_ID}" \
             -H "Authorization: Bearer ${ACCESS_TOKEN}" \
             "https://twitch.tv{BROADCASTER}")
 
-          # 3. Use jq to parse the active stream array
+          # 3. Use jq to parse the array objects
           IS_LIVE=$(echo "$STREAM_RESP" | jq '.data | length > 0')
 
           if [ "$IS_LIVE" = "true" ]; then
@@ -40,11 +39,9 @@ jobs:
             echo "{\"is_live\": false, \"started_at\": null}" > stream.json
           fi
 
-
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add stream.json
-          # Only commit if the file actually changed to avoid endless empty history loops
           git diff-index --quiet HEAD || (git commit -m "Update live stream timeline data" && git push)
