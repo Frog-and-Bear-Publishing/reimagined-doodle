@@ -19,7 +19,7 @@ jobs:
           BROADCASTER: "frognbear" # Change to your twitch channel username
         run: |
           # 1. Fetch App Access Token
-          TOKEN_RESP=$(curl -s -X POST "https://twitch.tv" \
+          TOKEN_RESP=$(curl -s -X POST "https://api.twitch.tv/helix/streams" \
             -d "client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&grant_type=client_credentials")
           
           ACCESS_TOKEN=$(echo "$TOKEN_RESP" | jq -r '.access_token')
