@@ -102,7 +102,10 @@ body {
   justify-content: center;
 
 }
-
+.footer-links ul{
+  justify-content: space-between;
+ 
+}
 .footer-links a {
   display: inline-block !important;
  
@@ -185,6 +188,11 @@ body {
   color: rgb(87, 14, 87);
   background-color: rgba(72, 255, 177, 1);
 
+}
+
+.header-links ul{
+  justify-content: space-between;
+ 
 }
 
 .header-links a {
