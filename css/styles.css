@@ -148,7 +148,12 @@ body {
 .header-logo {
   display: flex;
   justify-content: center;
-  
+  background-color:rgba(205, 25, 79, .6);
+}
+
+.luminance img {
+  mask-mode: luminance;
+  background-color:rgba(205, 25, 79, .6);
 }
 
 .header-logo img {
@@ -156,7 +161,7 @@ body {
   height: auto;
   background-color: rgba(14, 232, 200, 0.7);
   border-radius: 20px;
-  mask-image:  rgb(205, 25, 79);
+  
 }
 
 .mask1 {
