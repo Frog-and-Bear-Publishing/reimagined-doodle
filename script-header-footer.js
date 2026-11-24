@@ -1,4 +1,15 @@
-
+document.getElementById('header-placeholder-sub').innerHTML = `
+<header class="site-header">
+    <div class="header-logo">
+       <a href="../index.html" class="header-logo"><div class="luminance">
+  <img class="luminance" src="../images/frogandbearpublishing_nobg.png" alt="Frog and Bear Publishing"></div></a>
+           </div>
+    <div class="header-links">
+        <a href="../index.html">Home</a>
+        <a href="../about">About</a>
+        <a href="../watch">Watch</a>
+        <a href="../creations">Creations</a>    
+    </div>`;
 
 document.getElementById('header-placeholder').innerHTML = `
 <header class="site-header">
