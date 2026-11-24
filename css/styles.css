@@ -5,7 +5,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: aquamarine; /* For browsers that do not support gradients */
+  background-color: aquamarine;
+  /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom, rgb(14, 232, 200), rgb(72, 255, 177));
 }
 
@@ -48,101 +49,110 @@ body {
 }
 
 @media only screen and (max-width: 620px) {
+
   /* For mobile phones: */
-  .menu, .main, .right {
+  .menu,
+  .main,
+  .right {
     width: 100%;
-}}
+  }
+}
 
 
-    #footer-placeholder {
-        margin-bottom: auto; /* This pushes footer to bottom */
-        width: 100%;
-    }
+#footer-placeholder {
+  margin-bottom: auto;
+  /* This pushes footer to bottom */
+  width: 100%;
+}
 
-    .site-footer {
-        text-align: center;
-        padding: 20px 0; /* Use a smaller, uniform padding */
-    }
+.site-footer {
+  text-align: center;
+  padding: 20px 0;
+  /* Use a smaller, uniform padding */
+}
 
-    .site-footer p {
-        margin: 0;
-        font-size: 0.9rem;
-    }
-
-
-    .footer-links {
-        display: flex;
-        justify-content: center;
-         
-    }
-
-    .footer-links a {
-        display: inline-block !important;
-        text-decoration: none;
-        padding: 5px 10px;
-        font-size: .9rem;
-        color: darkred; /* Keeping your theme consistent */
-    }
-
-    .footer-social-icon img {
-        width: 30px;
-        height: 30px;
-    }
-
-    #header-placeholder {
-        margin-bottom: auto; /* This pushes footer to bottom */
-        width: 100%;
-    }
-
-    .site-header {
-        background-image: url('../images/banner.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center -400px;
-        text-align: center;
-        padding: 100px 0;
-    }
-
-    .site-header p {
-        margin: 0;
-        font-size: 0.9rem;
-    }
+.site-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
 
 
-    .header-links {
-        display: flex;
-        justify-content: center;
-         
-    }
+.footer-links {
+  display: flex;
+  justify-content: center;
 
-    .header-logo {
-        display: flex;
-        justify-content: center;
-         
-    }
+}
 
-    .header-logo img {
-        width: 300px;
-        height: auto;}
+.footer-links a {
+  display: inline-block !important;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: .9rem;
+  color: darkred;
+  /* Keeping your theme consistent */
+}
 
-    .header-links a {
-        display: inline-block !important;
-        text-decoration: none;
-        font-family: "Rubik Bubbles", system-ui;
-        padding: 50px 50px;
-        font-size: 1.9rem;
-        color: blue;
-        background-color: rgba(255, 255, 255, 0.7); 
-        border-radius: 15px;
-    }
+.footer-social-icon img {
+  width: 30px;
+  height: 30px;
+}
 
-    .header-links a:hover {
-        display: inline-block !important;
-        text-decoration: none;
-        padding: 50px 50px;
-        font-size: 1.9rem;
-        color: darkblue;
-        background-color: rgba(255, 255, 255, 0.2); 
-        border-radius: 15px;
-    }
+#header-placeholder {
+  margin-bottom: auto;
+  /* This pushes footer to bottom */
+  width: 100%;
+}
+
+.site-header {
+  background-image: url('../images/banner.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center -400px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.site-header p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
+.header-links {
+  display: flex;
+  justify-content: center;
+
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+
+}
+
+.header-logo img {
+  width: 300px;
+  height: auto;
+}
+
+.header-links a {
+  display: inline-block !important;
+  text-decoration: none;
+  font-family: "Rubik Bubbles", system-ui;
+  padding: 50px 50px;
+  font-size: 1.9rem;
+  color: blue;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+}
+
+.header-links a:hover {
+  display: inline-block !important;
+  text-decoration: none;
+  padding: 50px 50px;
+  font-size: 1.9rem;
+  color: darkblue;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
