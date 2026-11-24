@@ -73,10 +73,10 @@ body {
   display: flex;
   flex-direction: row;
   min-width: 100vw;
-  min-width: 100dvh;
+
   justify-content: space-evenly;
-  gap: 3rem;
-  margin: 0 20vh;
+  
+ 
 }
 
 .item {
@@ -87,10 +87,9 @@ body {
 .container-vert {
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
-  min-width: 100dvh;
-  justify-content: center;
-  gap: 3rem;
+  
+  justify-content: space-evenly;
+ 
 }
 
 footer {
