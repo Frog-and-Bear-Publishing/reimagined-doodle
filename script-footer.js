@@ -87,6 +87,7 @@ document.getElementById('header-placeholder').innerHTML = `
 <header class="site-header">
     
     <div class="header-links">
+    here
         <a href="../index.html">Home</a>
         <a href="../about">About</a>
         <a href="../watch">Watch</a>
@@ -109,7 +110,7 @@ document.getElementById('footer-placeholder').innerHTML = `
         <a href="../watch">Watch</a>
         <a href="../creations">Creations</a>
         <a href="../contact">Contact</a>
-          
+          test 2
     </div>
     <p>&copy; 2026 Frog and Bear Publishing™. All rights reserved.
     &copy; Weird games for wonderful people 🐸🐻™</p>
