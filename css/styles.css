@@ -9,6 +9,7 @@ body {
   background-image: linear-gradient(rgb(72, 255, 177),rgb(14, 232, 200) 5 rgb(72, 255, 177));
   display: flex;
   flex-direction: column;
+  font-size: 1rem;
   min-height: 100vh;
   min-height: 100dvh;
   margin: 0;
