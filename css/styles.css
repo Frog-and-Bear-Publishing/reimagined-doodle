@@ -43,6 +43,8 @@ body {
   width: 60%;
   padding: 0 20px;
   font-family: "Rubik Bubbles", system-ui;
+  display: flex;
+  justify-content: center;
 }
 
 .right {
@@ -79,7 +81,7 @@ body {
 
 .site-footer p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 
@@ -93,7 +95,7 @@ body {
   display: inline-block !important;
   text-decoration: none;
   padding: 5px 10px;
-  font-size: .9rem;
+  font-size: 1rem;
   color: darkred;
   /* Keeping your theme consistent */
 }
@@ -104,8 +106,7 @@ body {
 }
 
 #header-placeholder {
-  margin-bottom: auto;
-  /* This pushes footer to bottom */
+  margin-top: auto;
   width: 100%;
 }
 
@@ -116,7 +117,7 @@ body {
   background-size: cover;
   background-position: center -600px;
   text-align: center;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .site-header p {
@@ -134,12 +135,27 @@ body {
 .header-logo {
   display: flex;
   justify-content: center;
-
+  background-color: rgba(14, 232, 200, 0.7);
+  border-radius: 20px;
 }
 
 .header-logo img {
   width: 500px;
   height: auto;
+  background-color: rgba(14, 232, 200, 0.7);
+  border-radius: 20px;
+}
+
+.header-logo a:hover {
+  color: rgb(87, 14, 65);
+  background-color: rgba(72, 255, 177, 0.7);
+
+}
+
+.header-logo a:click {
+  color: rgb(87, 14, 87);
+  background-color: rgba(72, 255, 177, 1);
+
 }
 
 .header-links a {
