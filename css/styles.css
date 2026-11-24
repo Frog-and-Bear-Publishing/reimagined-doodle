@@ -74,9 +74,8 @@ body {
 }
 
 .flex_item {
-  flex: 1;
-  padding: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 #footer-placeholder {
@@ -155,6 +154,15 @@ body {
   height: auto;
   background-color: rgba(14, 232, 200, 0.7);
   border-radius: 20px;
+}
+
+.mask1 {
+  -webkit-mask-image: url(../images/twitchbanner_frogandbearpublishing.png);
+  mask-image: url(../images/twitchbanner_frogandbearpublishing.png);
+  mask-repeat: no-repeat;
+  mask-position: center;      
+  mask-size: 100%; 
+  background-color: rgb(205, 25, 79);
 }
 
 .header-logo a:hover {
