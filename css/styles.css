@@ -182,7 +182,7 @@ body {
 
 .luminance img {
   mask-image: url(../images/frogandbearpublishing_nobg.png);
-  mask-mode: alpha;
+  mask-mode: luminance;
 }
 
 .header-logo img {
