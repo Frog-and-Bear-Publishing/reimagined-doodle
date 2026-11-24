@@ -95,7 +95,7 @@ margin: 0 30px 0 30px;
  
 }
 header{
-  flex:1;
+  flex-shrink: 0;
 } 
 
 footer {
@@ -106,7 +106,7 @@ footer {
 }
 
 #footer-placeholder {
-  margin-bottom: 1em;
+  
   /* This pushes footer to bottom */
   width: 100%;
 }
