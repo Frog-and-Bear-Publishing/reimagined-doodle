@@ -66,16 +66,17 @@ body {
   }
 }
 
-.flex_container {
+.container {
   display: flex;
   flex-direction: row;
   min-width: 100vw;
   min-width: 100dvh;
+  justify-content: center;
 }
 
-.flex_item {
+.item {
   display: flex;
-  justify-content: center;
+  place-items: center;
 }
 
 #footer-placeholder {
