@@ -180,10 +180,7 @@ padding: 10px 2rem;
   display: flex;
   justify-content: center;
 padding: 20px 2rem;
-width: 500px;
-  height: auto;
-  background-color: rgba(14, 232, 200, 0.7);
-  border-radius: 20px;
+
 }
 
 .luminance {
@@ -210,7 +207,7 @@ width: 500px;
   mask-size: 500px 261.25px;
 }
 
-.header-logo img {
+.header-logo a {
   width: 500px;
   height: auto;
   background-color: rgba(14, 232, 200, 0.7);
