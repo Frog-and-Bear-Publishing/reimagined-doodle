@@ -129,6 +129,7 @@ body {
     .header-links a {
         display: inline-block !important;
         text-decoration: none;
+        font-family: "Rubik Bubbles", system-ui;
         padding: 50px 50px;
         font-size: 1.9rem;
         text-color: blue;
