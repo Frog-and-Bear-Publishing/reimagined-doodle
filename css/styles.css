@@ -175,7 +175,7 @@ body {
 }
 
 .luminance img {
-  mask-image: url(../images/twitchbanner_frogandbearpublishing.png);
+  mask-image: url(../images/frogandbearpublishing_nobg.png);
   mask-mode: alpha;
 }
 
@@ -188,8 +188,8 @@ body {
 }
 
 .mask1 {
-  -webkit-mask-image: url(../images/twitchbanner_frogandbearpublishing.png);
-  mask-image: url(../images/twitchbanner_frogandbearpublishing.png);
+  -webkit-mask-image: url(../images/frogandbearpublishing_nobg.png);
+  mask-image: url(../images/frogandbearpublishing_nobg.png);
   mask-repeat: no-repeat;
   mask-position: center;      
   mask-size: 100%; 
