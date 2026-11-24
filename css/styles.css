@@ -92,7 +92,11 @@ padding:30px;
   gap: 3rem;
 }
 
-
+footer {
+  margin-bottom: 50px;
+  /* This pushes footer to bottom */
+  width: 100%;
+}
 
 #footer-placeholder {
   margin-bottom: 50px;
