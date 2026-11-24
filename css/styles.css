@@ -200,12 +200,10 @@ padding: 20px 2rem;
 .l2 {
   mask-image: url(../images/frogandbearpublishing_nobg.png);
   background: rgb(205, 25, 79);
-  
   mask-mode: alpha;
-  width: 220px;
-
-  aspect-ratio: 1;
-  mask-size: 220px 220px;
+  width: 500px;
+  height: 261.25px;
+  mask-size: 00px 261.25px;
 }
 
 .header-logo img {

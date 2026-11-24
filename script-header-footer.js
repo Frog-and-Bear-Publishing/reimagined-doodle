@@ -3,9 +3,8 @@
 document.getElementById('header-placeholder').innerHTML = `
 
     <div class="header-logo">
-       <a href="../index.html" class="header-logo"><div class="luminance">
-  <img class="luminance" src="../images/frogandbearpublishing_nobg.png" alt="Frog and Bear Publishing"></div></a>
-           </div>
+       <a href="../index.html" class="header-logo"><div class="l2" alt="Frog and Bear Publishing"></div></a>
+    </div>
     <div class="header-links">
         <a href="../index.html">Home</a>
         <a href="../about">About</a>
