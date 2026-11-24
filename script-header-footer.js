@@ -86,13 +86,8 @@ style.textContent = `
         text-decoration: none;
         padding: 5px 10px;
         font-size: 1.9rem;
-        
+        text-color: blue;
     }
-
-    .header-social-icon img {
-    width: 30px;
-    height: 30px;
-}
 
 `;
 
