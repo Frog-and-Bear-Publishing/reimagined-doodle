@@ -15,9 +15,7 @@ body {
   
 }
 
-header,footer {
-  display: flex;
-}
+
 
 .rubik-bubbles-regular {
   font-family: "Rubik Bubbles", system-ui;
