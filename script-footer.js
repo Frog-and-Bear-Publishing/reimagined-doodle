@@ -50,6 +50,11 @@ style.textContent = `
     }
 
     .site-header {
+      background-image: url('../images/banner.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
         text-align: center;
         padding: 20px 0; /* Use a smaller, uniform padding */
     }
@@ -85,9 +90,7 @@ document.head.appendChild(style);
 
 document.getElementById('header-placeholder').innerHTML = `
 <header class="site-header">
-    
     <div class="header-links">
-    here
         <a href="../index.html">Home</a>
         <a href="../about">About</a>
         <a href="../watch">Watch</a>
@@ -102,7 +105,6 @@ document.getElementById('footer-placeholder').innerHTML = `
         <a href="https://www.youtube.com/@frognbearpub" target="_blank" class="footer-social-icon"><img src="../images/icon_youtube.png" alt="YouTube">
         <a href="https://www.instagram.com/frogandbearpub" target="_blank" class="footer-social-icon"><img src="../images/icon_instagram.png" alt="Instagram">
         <a href="https://www.patreon.com/cw/FrognBear" target="_blank" class="footer-social-icon"><img src="../images/icon_patreon.png" alt="Patreon">
-
         </div>
     <div class="footer-links">
         <a href="../index.html">Home</a>
@@ -110,7 +112,6 @@ document.getElementById('footer-placeholder').innerHTML = `
         <a href="../watch">Watch</a>
         <a href="../creations">Creations</a>
         <a href="../contact">Contact</a>
-          test 2
     </div>
     <p>&copy; 2026 Frog and Bear Publishing™. All rights reserved.
     &copy; Weird games for wonderful people 🐸🐻™</p>
