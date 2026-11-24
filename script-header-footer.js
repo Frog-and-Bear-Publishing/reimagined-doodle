@@ -1,5 +1,3 @@
-
-
 document.getElementById('header-placeholder').innerHTML = `
 
     <div class="header-logo">
