@@ -56,7 +56,7 @@ style.textContent = `
   background-size: cover;
   background-position: center;
         text-align: center;
-        padding: 20px 0; /* Use a smaller, uniform padding */
+        padding: 200px 0;
     }
 
     .site-header p {
@@ -71,12 +71,22 @@ style.textContent = `
          
     }
 
+    .header-logo {
+        display: flex;
+        justify-content: center;
+         
+    }
+
+    .header-logo img {
+    width: 300px;
+}
+
     .header-links a {
         display: inline-block !important;
         text-decoration: none;
         padding: 5px 10px;
-        font-size: .9rem;
-        color: darkred; /* Keeping your theme consistent */
+        font-size: 1.9rem;
+        
     }
 
     .header-social-icon img {
@@ -90,6 +100,7 @@ document.head.appendChild(style);
 
 document.getElementById('header-placeholder').innerHTML = `
 <header class="site-header">
+    <a href="../index.html" target="_blank" class="header-logo"><img src="../images/logo_nobg.png" alt="Frog and Bear Publishing"></a>
     <div class="header-links">
         <a href="../index.html">Home</a>
         <a href="../about">About</a>
