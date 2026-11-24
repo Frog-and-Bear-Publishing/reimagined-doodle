@@ -156,7 +156,7 @@ body {
   background-color:rgba(205, 25, 79, .6);
 }
 
-.luminance img {
+.luminance {
   mask-mode: luminance;
   background-color:rgba(205, 25, 79, .6);
 }
