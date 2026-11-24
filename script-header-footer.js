@@ -1,7 +1,7 @@
 
 
 document.getElementById('header-placeholder').innerHTML = `
-<header class="site-header">
+
     <div class="header-logo">
        <a href="../index.html" class="header-logo"><div class="luminance">
   <img class="luminance" src="../images/frogandbearpublishing_nobg.png" alt="Frog and Bear Publishing"></div></a>
@@ -11,8 +11,7 @@ document.getElementById('header-placeholder').innerHTML = `
         <a href="../about">About</a>
         <a href="../watch">Watch</a>
         <a href="../creations">Creations</a>    
-    </div>
-</header>`;
+    </div>`;
 
 document.getElementById('footer-placeholder').innerHTML = `
 <footer class="site-footer">
@@ -34,15 +33,3 @@ document.getElementById('footer-placeholder').innerHTML = `
     
 </footer>`;
 
-document.getElementById('header-placeholder-sub').innerHTML = `
-
-    <div class="header-logo">
-       <a href="../index.html" class="header-logo"><div class="luminance">
-  <img class="luminance" src="../images/frogandbearpublishing_nobg.png" alt="Frog and Bear Publishing"></div></a>
-           </div>
-    <div class="header-links">
-        <a href="../index.html">Home</a>
-        <a href="../about">About</a>
-        <a href="../watch">Watch</a>
-        <a href="../creations">Creations</a>    
-    </div>`;
