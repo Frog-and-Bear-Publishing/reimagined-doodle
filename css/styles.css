@@ -95,7 +95,7 @@ body {
 
 
 #footer-placeholder {
-  margin-bottom: auto;
+  margin-bottom: 50px;
   /* This pushes footer to bottom */
   width: 100%;
 }
