@@ -81,7 +81,7 @@ body {
 }
 
 .item {
-  display: flex;
+  
   place-items: center;
   flex-grow: 1;
 }
