@@ -100,7 +100,9 @@ document.head.appendChild(style);
 
 document.getElementById('header-placeholder').innerHTML = `
 <header class="site-header">
-    <a href="../index.html" target="_blank" class="header-logo"><img src="../images/logo_nobg.png" alt="Frog and Bear Publishing"></a>
+    <div class="header-logo">
+        <a href="../index.html" target="_blank" class="header-logo"><img src="../images/logo_nobg.png" alt="Frog and Bear Publishing"></a>
+    </div>
     <div class="header-links">
         <a href="../index.html">Home</a>
         <a href="../about">About</a>
