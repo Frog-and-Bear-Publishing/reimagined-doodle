@@ -85,6 +85,17 @@ header,footer {
   place-items: center;
 }
 
+.container-vert {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-width: 100dvh;
+  justify-content: center;
+  gap: 3rem;
+}
+
+
+
 #footer-placeholder {
   margin-bottom: auto;
   /* This pushes footer to bottom */
