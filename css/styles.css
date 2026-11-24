@@ -173,7 +173,7 @@ padding: 0px 2rem;
 .header-logo {
   display: flex;
   justify-content: center;
-
+padding: 0px 2rem;
 }
 
 .luminance {
@@ -251,7 +251,7 @@ padding: 0px 2rem;
 .subheader-links {
   display: flex;
   justify-content: center;
-  padding: 4rem;
+ 
 
 }
 
@@ -259,7 +259,7 @@ padding: 0px 2rem;
   display: inline-block !important;
   text-decoration: none;
   font-family: "Rubik Bubbles", system-ui;
-  padding: 1rem;
+  
   font-size: 1.9rem;
   color: rgb(10, 40, 43);
   background-color: rgba(14, 232, 200, 0.7);
