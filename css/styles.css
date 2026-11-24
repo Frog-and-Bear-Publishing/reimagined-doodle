@@ -110,7 +110,7 @@ footer {
 .site-footer {
   text-align: center;
   padding: 20px 0;
-  /* Use a smaller, uniform padding */
+  margin-bottom: 50px;
 }
 
 .site-footer p {
