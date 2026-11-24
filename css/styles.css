@@ -156,6 +156,7 @@ body {
   height: auto;
   background-color: rgba(14, 232, 200, 0.7);
   border-radius: 20px;
+  mask-image:  rgb(205, 25, 79);
 }
 
 .mask1 {
