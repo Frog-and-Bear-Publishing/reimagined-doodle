@@ -74,7 +74,6 @@ body {
   flex-direction: row;
 
 
-  justify-content: space-evenly;
   align-items: center;
   
  
@@ -83,7 +82,7 @@ body {
 .item {
   
   place-items: center;
-  
+  flex: 1;
 }
 
 .container-vert {
