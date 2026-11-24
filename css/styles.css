@@ -203,7 +203,7 @@ padding: 20px 2rem;
   mask-mode: alpha;
   width: 500px;
   height: 261.25px;
-  mask-size: 00px 261.25px;
+  mask-size: 500px 261.25px;
 }
 
 .header-logo img {
