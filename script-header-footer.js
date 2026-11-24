@@ -54,9 +54,9 @@ style.textContent = `
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        background-position: center;
+        background-position: center -200px;
         text-align: center;
-        padding: 400px 0;
+        padding: 200px 0;
     }
 
     .site-header p {
@@ -84,7 +84,7 @@ style.textContent = `
     .header-links a {
         display: inline-block !important;
         text-decoration: none;
-        padding: 50px 100px;
+        padding: 50px 50px;
         font-size: 1.9rem;
         text-color: blue;
     }
@@ -96,7 +96,7 @@ document.head.appendChild(style);
 document.getElementById('header-placeholder').innerHTML = `
 <header class="site-header">
     <div class="header-logo">
-        <a href="../index.html" target="_blank" class="header-logo"><img src="../images/logo_nobg.png" alt="Frog and Bear Publishing"></a>
+        <a href="../index.html" target="_blank" class="header-logo"><img src="../images/frogandbearpublishing_nobg.png" alt="Frog and Bear Publishing"></a>
     </div>
     <div class="header-links">
         <a href="../index.html">Home</a>
