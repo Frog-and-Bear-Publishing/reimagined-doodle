@@ -42,7 +42,7 @@ body {
 .main {
   
   flex:1;
- 
+ font-size: 1.2rem;
   padding: 0 20px;
   font-family: "Rubik Bubbles", system-ui;
   font-weight: 400;
@@ -115,7 +115,7 @@ footer {
 
 .site-footer p {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 
@@ -157,7 +157,7 @@ footer {
 
 .site-header {
   
-  background: linear-gradient(to bottom, transparent 20%, midnightblue 60%), url('../images/banner.png');
+  background: linear-gradient(to bottom, transparent 20%), url('../images/banner.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 140%;
