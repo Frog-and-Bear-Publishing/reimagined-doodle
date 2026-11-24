@@ -6,7 +6,6 @@ body {
   font-family: "Rubik Bubbles", sans-serif;
   margin: 0;
   background-color: aquamarine;
-  /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom, rgb(14, 232, 200), rgb(72, 255, 177));
   display: flex;
   flex-direction: column;
@@ -155,7 +154,7 @@ body {
   background-size: cover;
   background-position: center -600px;
   text-align: center;
-  padding: 4rem 0;
+  
 }
 
 .site-header p {
@@ -167,7 +166,7 @@ body {
 .header-links {
   display: flex;
   justify-content: center;
-  padding: 4rem 2rem;
+  padding: 4rem ;
 
 }
 
