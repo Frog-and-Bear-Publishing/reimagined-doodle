@@ -245,11 +245,12 @@ padding: 20px 2rem;
   display: inline-block !important;
   text-decoration: none;
   font-family: "Rubik Bubbles", system-ui;
-  padding: 1rem 1rem;
+  padding: 0px 1rem;
   font-size: 1.9rem;
   color: rgb(205, 25, 79);
   background-color: rgba(14, 232, 200, 0.7);
   border-radius: 20px;
+  gap: 3rem;
 }
 
 .header-links a:hover {
