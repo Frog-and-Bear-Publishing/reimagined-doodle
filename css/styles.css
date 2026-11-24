@@ -94,6 +94,9 @@ margin: 0 30px 0 30px;
   justify-content: space-evenly;
  
 }
+header{
+  flex:1;
+} 
 
 footer {
   margin-bottom: 1em;
