@@ -176,13 +176,15 @@ body {
 }
 
 .luminance {
-  
+  width: 500px;
+  height: auto;
   background-color:rgba(205, 25, 79, .5);
 }
 
 .luminance img {
   mask-image: url(../images/frogandbearpublishing_nobg.png);
-  mask-mode: luminance;
+  mask-mode: luminance;width: 500px;
+  height: auto;
 }
 
 .header-logo img {
