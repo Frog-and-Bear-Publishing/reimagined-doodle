@@ -38,16 +38,27 @@ style.textContent = `
         font-size: .9rem;
         color: darkred; /* Keeping your theme consistent */
     }
+
+    .footer-social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
 `;
 
 document.head.appendChild(style);
 
 document.getElementById('footer-placeholder').innerHTML = `
 <footer class="site-footer">
-    
+    <div>
+        <a href="https://www.twitch.com/frognbear" target="_blank" class="footer-social-icon"><img src="images/icon_twitch.png" alt="Twitch">
+    </div>
     <div class="footer-links">
-        <a href="https://www.frognbear.com/index.html">Home</a>
-        <a href="https://www.frognbear.com/socials.html">Socials</a>
+        <a href=".index.html">Home</a>
+        <a href="./about">About</a>
+        <a href="./watch">Watch</a>
+        <a href="./creations">Creations</a>
+        <a href="./contact">Contact</a>
           
     </div>
     <p>&copy; 2026 Frog and Bear Publishing™. All rights reserved.
