@@ -81,7 +81,7 @@ margin: 0 30px 0 30px;
 }
 
 .item {
-  
+  text-align: center;
   place-items: center;
   flex: 1;
 }
