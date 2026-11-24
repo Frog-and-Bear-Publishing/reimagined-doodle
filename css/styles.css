@@ -269,7 +269,7 @@ padding: 20px 2rem;
 .subheader-links {
   display: flex;
   justify-content: center;
-
+  margin-bottom: 20px;
 
 }
 
