@@ -123,11 +123,17 @@ body {
 }
 .footer-links a {
   display: inline-block !important;
- 
   padding: 5px 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: darkred;
-  /* Keeping your theme consistent */
+}
+
+.footer-links a:hover {
+  color: rgb(199, 15, 55);
+}
+
+.footer-links a:click {
+  color: rgb(207, 6, 83);
 }
 
 .footer-social-icon img {
@@ -234,6 +240,29 @@ body {
 
 .header-links a:click {
   color: rgb(87, 14, 87);
+  background-color: rgba(72, 255, 177, 1);
+
+}
+
+.subheader-links a {
+  display: inline-block !important;
+  text-decoration: none;
+  font-family: "Rubik Bubbles", system-ui;
+  padding: 1rem 1rem;
+  font-size: 1.9rem;
+  color: rgb(10, 40, 43);
+  background-color: rgba(14, 232, 200, 0.7);
+  border-radius: 20px;
+}
+
+.subheader-links a:hover {
+  color: rgb(45, 7, 58);
+  background-color: rgba(72, 255, 177, 0.7);
+
+}
+
+.subheader-links a:click {
+  color: rgb(31, 1, 57);
   background-color: rgba(72, 255, 177, 1);
 
 }
