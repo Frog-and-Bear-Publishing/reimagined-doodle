@@ -132,7 +132,7 @@ body {
         font-family: "Rubik Bubbles", system-ui;
         padding: 50px 50px;
         font-size: 1.9rem;
-        text-color: blue;
+        color: blue;
         background-color: rgba(255, 255, 255, 0.7); 
         border-radius: 15px;
     }
@@ -142,7 +142,7 @@ body {
         text-decoration: none;
         padding: 50px 50px;
         font-size: 1.9rem;
-        text-color: darkblue;
+        color: darkblue;
         background-color: rgba(255, 255, 255, 0.2); 
         border-radius: 15px;
     }
