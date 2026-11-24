@@ -166,7 +166,7 @@ body {
 .header-links {
   display: flex;
   justify-content: center;
-  padding: 4rem ;
+padding: 0px 2rem;
 
 }
 
