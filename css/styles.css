@@ -183,7 +183,7 @@ padding: 0px 2rem;
 }
 
 .luminance img {
-  mask-image: url(../images/frogandbearpublishing_nobg.png);
+  mask-image: url("../images/frogandbearpublishing_nobg.png");
   mask-mode: alpha;
   width: 500px;
   height: auto;
