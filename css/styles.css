@@ -6,7 +6,7 @@ body {
   font-family: "Rubik Bubbles", sans-serif;
   margin: 0;
   background-color: aquamarine;
-  background-image: linear-gradient(rgb(72, 255, 177),rgb(14, 232, 200), rgb(72, 255, 177));
+  background-image: linear-gradient(rgb(72, 255, 177),rgb(14, 232, 200) 5 rgb(72, 255, 177));
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -157,11 +157,11 @@ footer {
 
 .site-header {
   
-  background: linear-gradient(to bottom, transparent 30%), url('../images/banner.png');
+  background: linear-gradient(to bottom, transparent 50%), url('../images/banner.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 120%;
-  background-position: -200px -600px;
+  background-size: 140%;
+  background-position: -300px -800px;
   text-align: center;
  
 }
