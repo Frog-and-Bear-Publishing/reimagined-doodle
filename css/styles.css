@@ -182,7 +182,7 @@ padding: 10px 2rem;
 .header-logo {
   display: flex;
   justify-content: center;
-padding: 20px 2rem;
+
 
 }
 
@@ -212,8 +212,8 @@ padding: 20px 2rem;
 
 .header-logo a {
   
-  background-color: rgba(14, 232, 200, 0.7);
-  border-radius: 30px;
+  background-color: rgba(14, 232, 200, 0.8);
+  border-radius: 50px;
 
 }
 
