@@ -196,6 +196,15 @@ padding: 20px 2rem;
   height: 261.25px;
 }
 
+.l2 {
+  mask-image: url("../images/frogandbearpublishing_nobg.png"), 
+   linear-gradient(to right, rgba(205, 25, 79,1), rgba(205, 25, 79,1));
+   mask-composite: intersect;
+  mask-mode: alpha;
+  width: 500px;
+  height: 261.25px;
+}
+
 .header-logo img {
   width: 500px;
   height: auto;
