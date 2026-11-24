@@ -159,7 +159,7 @@ body {
 .header-links {
   display: flex;
   justify-content: center;
-  padding: 2rem 2rem;
+  padding: 4rem 2rem;
 
 }
 
@@ -219,7 +219,7 @@ body {
   display: inline-block !important;
   text-decoration: none;
   font-family: "Rubik Bubbles", system-ui;
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
   font-size: 1.9rem;
   color: rgb(205, 25, 79);
   background-color: rgba(14, 232, 200, 0.7);
