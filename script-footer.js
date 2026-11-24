@@ -10,7 +10,7 @@ style.textContent = `
     }
 
     #footer-placeholder {
-        margin-top: auto; /* This pushes footer to bottom */
+        margin-bottom: auto; /* This pushes footer to bottom */
         width: 100%;
     }
 
@@ -51,14 +51,14 @@ document.head.appendChild(style);
 document.getElementById('footer-placeholder').innerHTML = `
 <footer class="site-footer">
     <div>
-        <a href="https://www.twitch.com/frognbear" target="_blank" class="footer-social-icon"><img src="images/icon_twitch.png" alt="Twitch">
+        <a href="https://www.twitch.com/frognbear" target="_blank" class="footer-social-icon"><img src="../images/icon_twitch.png" alt="Twitch">
     </div>
     <div class="footer-links">
-        <a href=".index.html">Home</a>
-        <a href="./about">About</a>
-        <a href="./watch">Watch</a>
-        <a href="./creations">Creations</a>
-        <a href="./contact">Contact</a>
+        <a href="../index.html">Home</a>
+        <a href="../about">About</a>
+        <a href="../watch">Watch</a>
+        <a href="../creations">Creations</a>
+        <a href="../contact">Contact</a>
           
     </div>
     <p>&copy; 2026 Frog and Bear Publishing™. All rights reserved.
