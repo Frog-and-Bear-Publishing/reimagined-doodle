@@ -244,6 +244,13 @@ body {
 
 }
 
+.subheader-links {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 2rem;
+
+}  
+
 .subheader-links a {
   display: inline-block !important;
   text-decoration: none;
