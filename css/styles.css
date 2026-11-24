@@ -159,7 +159,7 @@ footer {
   background-size: cover;
   background-position: center -600px;
   text-align: center;
-  padding: 20px 0;
+ 
 }
 
 .site-header p {
@@ -171,14 +171,14 @@ footer {
 .header-links {
   display: flex;
   justify-content: center;
-padding: 20px 2rem;
+padding: 10px 2rem;
 
 }
 
 .header-logo {
   display: flex;
   justify-content: center;
-padding: 30px 2rem;
+padding: 20px 2rem;
 }
 
 .luminance {
