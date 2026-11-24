@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   min-height: 100dvh;
-  
+
 }
 
 
@@ -117,10 +117,12 @@ body {
   justify-content: center;
 
 }
-.footer-links ul{
+
+.footer-links ul {
   justify-content: space-between;
- 
+
 }
+
 .footer-links a {
   display: inline-block !important;
   padding: 5px 10px;
@@ -172,18 +174,19 @@ body {
 .header-logo {
   display: flex;
   justify-content: center;
-  
+
 }
 
 .luminance {
   width: 500px;
   height: auto;
-  background-color:rgba(205, 25, 79, .5);
+  background-color: rgba(205, 25, 79, .5);
 }
 
 .luminance img {
   mask-image: url(../images/frogandbearpublishing_nobg.png);
-  mask-mode: luminance;width: 500px;
+  mask-mode: luminance;
+  width: 500px;
   height: auto;
 }
 
@@ -192,15 +195,15 @@ body {
   height: auto;
   background-color: rgba(14, 232, 200, 0.7);
   border-radius: 20px;
-  
+
 }
 
 .mask1 {
   -webkit-mask-image: url(../images/frogandbearpublishing_nobg.png);
   mask-image: url(../images/frogandbearpublishing_nobg.png);
   mask-repeat: no-repeat;
-  mask-position: center;      
-  mask-size: 100%; 
+  mask-position: center;
+  mask-size: 100%;
   width: 320px;
   height: 180px;
   background-color: rgb(205, 25, 79);
@@ -218,9 +221,9 @@ body {
 
 }
 
-.header-links ul{
+.header-links ul {
   justify-content: space-between;
- 
+
 }
 
 .header-links a {
@@ -249,15 +252,15 @@ body {
 .subheader-links {
   display: flex;
   justify-content: center;
-  padding: 4rem ;
+  padding: 4rem;
 
-}  
+}
 
 .subheader-links a {
   display: inline-block !important;
   text-decoration: none;
   font-family: "Rubik Bubbles", system-ui;
-  padding: 1rem ;
+  padding: 1rem;
   font-size: 1.9rem;
   color: rgb(10, 40, 43);
   background-color: rgba(14, 232, 200, 0.7);
