@@ -175,7 +175,8 @@ body {
 }
 
 .luminance img {
-  mask-mode: luminance;
+  mask-image: url(../images/twitchbanner_frogandbearpublishing.png);
+  mask-mode: alpha;
 }
 
 .header-logo img {
@@ -183,7 +184,7 @@ body {
   height: auto;
   background-color: rgba(14, 232, 200, 0.7);
   border-radius: 20px;
-  mask-image: url(../images/twitchbanner_frogandbearpublishing.png);
+  
 }
 
 .mask1 {
