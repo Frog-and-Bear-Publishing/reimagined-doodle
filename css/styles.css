@@ -96,14 +96,14 @@ margin: 0 30px 0 30px;
 }
 
 footer {
-  margin-bottom: 50px;
+  margin-bottom: 1em;
   /* This pushes footer to bottom */
   width: 100%;
  
 }
 
 #footer-placeholder {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   /* This pushes footer to bottom */
   width: 100%;
 }
