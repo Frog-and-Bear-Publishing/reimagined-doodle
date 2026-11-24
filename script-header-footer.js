@@ -40,23 +40,23 @@ style.textContent = `
     }
 
     .footer-social-icon img {
-    width: 30px;
-    height: 30px;
-}
+        width: 30px;
+        height: 30px;
+    }
 
-#header-placeholder {
+    #header-placeholder {
         margin-bottom: auto; /* This pushes footer to bottom */
         width: 100%;
     }
 
     .site-header {
-      background-image: url('../images/banner.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+        background-image: url('../images/banner.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
         text-align: center;
-        padding: 200px 0;
+        padding: 400px 0;
     }
 
     .site-header p {
@@ -78,13 +78,13 @@ style.textContent = `
     }
 
     .header-logo img {
-    width: 300px;
-}
+        width: 300px;
+        height: auto;}
 
     .header-links a {
         display: inline-block !important;
         text-decoration: none;
-        padding: 5px 10px;
+        padding: 50px 100px;
         font-size: 1.9rem;
         text-color: blue;
     }
