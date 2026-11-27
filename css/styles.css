@@ -377,11 +377,11 @@ footer {
 
   .site-header {
 
-    background: linear-gradient(to bottom, transparent), url('../images/banner.png');
+   background: linear-gradient(to bottom, transparent), url('../images/banner.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 140%;
-    background-position: -25px -60px;
+    background-size: cover;
+    background-position: center;
     text-align: center;
     height: calc(100vh/3);
   }
@@ -420,5 +420,10 @@ footer {
     height: 28.125rem;
 
     mask-size: 50rem 28.125rem;
+
+      width: calc(100vh*1.78*2/9);
+    height:  calc(100vh*2/9);
+
+    mask-size: calc(100vh*1.78*2/9) calc(100vh*2/9);
   }
 }
