@@ -73,6 +73,11 @@ main {
 
 }
 
+.container-box {
+  background-color: rgba(14, 232, 200, 0.8);
+  border-radius: 20px;
+}
+
 .item {
   text-align: center;
   place-items: center;
