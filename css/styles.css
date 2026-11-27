@@ -451,8 +451,8 @@ footer {
     background: linear-gradient(to bottom, transparent), url('../images/banner.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 140%;
-    background-position: -600px -800px;
+    background-size: 120%;
+    background-position: -60px -80px;
     text-align: center;
     height: calc(100vh/3);
   }
