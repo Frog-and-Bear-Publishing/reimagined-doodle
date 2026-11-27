@@ -9,8 +9,8 @@ body {
   background-image: linear-gradient(rgb(72, 255, 177), rgb(14, 232, 200) 45%, rgb(72, 255, 177) 80%);
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
-  min-width: 100vw;
+  font-size: 2rem;
+  min-width: 100vw; 
   min-height: 100vh;
   margin: 0;
 }
@@ -72,7 +72,7 @@ main {
 }
 
 .container-box {
-  background-color: rgb(66, 246, 69);
+  background-color: rgb(125, 219, 127);
   border-radius: 20px;
   padding: 1rem 1rem;
   box-shadow: 0 0 1rem 1rem rgb(190, 130, 234);
@@ -442,7 +442,7 @@ footer {
     background: linear-gradient(to bottom, transparent), url('../images/banner.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 140%;
     background-position: -600px -800px;
     text-align: center;
     height: calc(100vh/3);
