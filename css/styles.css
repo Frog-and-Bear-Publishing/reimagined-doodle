@@ -76,6 +76,7 @@ main {
 .container-box {
   background-color: rgba(14, 232, 200, 0.8);
   border-radius: 20px;
+  padding: 1rem 1rem;
 }
 
 .item {
