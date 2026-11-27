@@ -166,9 +166,9 @@ footer {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 140%;
-  background-position: -450px -800px;
+  background-position: -400px -800px;
   text-align: center;
-  padding: 10px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 .site-header p {
