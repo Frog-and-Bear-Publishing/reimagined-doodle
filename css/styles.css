@@ -263,6 +263,7 @@ footer {
   border-radius: 20px;
   gap: 3rem;
   margin: 0, 3rem, 0, 3rem;
+  margin-right: 30px;
 }
 
 .header-links a:hover {
@@ -318,7 +319,7 @@ footer {
   }
 }
 
-@media (min-width: 900px) {
+@media (max-width: 900px) {
 
   .site-header {
 
@@ -326,9 +327,9 @@ footer {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 80%;
-    background-position: center;
+    background-position: -200px -300px;
     text-align: center;
-    height: calc(100vh/3.5);
+    height: calc(100vh/3);
     width: 100vw;
 
   }
@@ -337,14 +338,14 @@ footer {
     mask-image: url("../images/frogandbear_nobg.png");
     background: rgb(205, 25, 79);
     mask-mode: alpha;
-    width: 400px;
-    height: 209px;
+    width: 300px;
+    height: 156.75px;
 
-    mask-size: 400px 209px;
+    mask-size: 300px 156.75px;
   }
 }
 
-@media (min-width: 1080px) {
+@media (max-width: 1080px) {
 
   .site-header {
 
@@ -352,7 +353,7 @@ footer {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 120%;
-    background-position: -250px -800px;
+    background-position: -300px -500px;
     text-align: center;
     height: calc(100vh/3);
 
@@ -378,6 +379,23 @@ footer {
     background-attachment: fixed;
     background-size: 140%;
     background-position: -450px -800px;
+    text-align: center;
+    height: calc(100vh/3);
+  }
+
+  
+}
+
+
+@media (max-width: 1920px) {
+
+  .site-header {
+
+    background: linear-gradient(to bottom, transparent 20%), url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 160%;
+    background-position: -450px -900px;
     text-align: center;
     height: calc(100vh/3);
   }
