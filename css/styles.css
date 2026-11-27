@@ -213,6 +213,8 @@ footer {
   mask-mode: alpha;
   width: 500px;
   height: 261.25px;
+  height: calc(100vw/3 - 2rem);
+  width: auto;
   mask-size: 500px 261.25px;
 }
 
