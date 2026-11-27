@@ -96,6 +96,8 @@ header {
   flex-shrink: 0;
   width: 100%;
   height: calc(100vh/3);
+  display: flex;
+  
 }
 
 footer {
@@ -103,6 +105,7 @@ footer {
   /* This pushes footer to bottom */
   width: 100%;
   flex-shrink: 0;
+  display: flex;
 }
 
 #footer-placeholder {
@@ -311,7 +314,7 @@ footer {
     background-size: 80%;
     background-position: -200px -300px;
     text-align: center;
-    height: calc(100vh/3);
+    min-height: calc(100vh/3);
     width: 100vw;
 
   }
@@ -353,7 +356,7 @@ footer {
     background-size: 80%;
     background-position: -200px -300px;
     text-align: center;
-    height: calc(100vh/3);
+    min-height: calc(100vh/3);
     width: 100vw;
 
   }
@@ -395,7 +398,7 @@ footer {
     background-size: 120%;
     background-position: -300px -500px;
     text-align: center;
-    height: calc(100vh/3);
+    min-height: calc(100vh/3);
 
   }
 
@@ -425,7 +428,7 @@ footer {
     background-size: 120%;
     background-position: -300px -500px;
     text-align: center;
-    height: calc(100vh/3);
+    min-height: calc(100vh/3);
   }
 
   .l2 {
@@ -450,7 +453,7 @@ footer {
     background-size: 120%;
     background-position: -60px -80px;
     text-align: center;
-    height: calc(100vh/3);
+    min-height: calc(100vh/3);
   }
 
 
