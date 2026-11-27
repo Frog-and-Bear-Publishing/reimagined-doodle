@@ -156,7 +156,7 @@ footer {
 
 .site-header {
 
-  background: linear-gradient(to bottom, url('../images/banner.png') 100%, transparent 10%);
+  background: linear-gradient(to bottom, url('../images/banner.png') 100%, transparent 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 140%;
@@ -419,7 +419,7 @@ footer {
 
   .site-header {
 
-    background: linear-gradient(to bottom, transparent 20%), url('../images/banner.png');
+    background: linear-gradient(to bottom,  url('../images/banner.png') 100%, transparent 20%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 120%;
@@ -444,7 +444,7 @@ footer {
 
   .site-header {
 
-    background: linear-gradient(to bottom, transparent), url('../images/banner.png');
+    background: linear-gradient(to bottom,  url('../images/banner.png') 100%, transparent 50%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 120%;
