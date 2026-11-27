@@ -311,15 +311,38 @@ footer {
 
 @media only screen and (max-width: 620px) {
 
-  /* For mobile phones: */
-  .menu,
-  .main,
-  .right {
-    width: 100%;
+   .site-header {
+
+    background: linear-gradient(to bottom, transparent 50%), url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 80%;
+    background-position: -200px -300px;
+    text-align: center;
+    height: calc(100vh/3);
+    width: 100vw;
+
   }
+
+  .l2 {
+    mask-image: url("../images/frogandbear_nobg.png");
+    background: rgb(205, 25, 79);
+    mask-mode: alpha;
+    width: 300px;
+    height: 156.75px;
+
+    mask-size: 300px 156.75px;
+
+    width: calc(100vh*1.78*2/9);
+    height: calc(100vh*2/9);
+
+    mask-size: calc(100vh*1.78*2/9) calc(100vh*2/9);
+  }
+
   .container {
-  
-  flex-direction: column;}
+
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 900px) {
@@ -345,6 +368,16 @@ footer {
     height: 156.75px;
 
     mask-size: 300px 156.75px;
+
+    width: calc(100vh*1.78*2/9);
+    height: calc(100vh*2/9);
+
+    mask-size: calc(100vh*1.78*2/9) calc(100vh*2/9);
+  }
+
+  .container {
+
+    flex-direction: column;
   }
 }
 
@@ -370,6 +403,11 @@ footer {
     height: 209px;
 
     mask-size: 400px 209px;
+
+    width: calc(100vh*1.78*2/9);
+    height: calc(100vh*2/9);
+
+    mask-size: calc(100vh*1.78*2/9) calc(100vh*2/9);
   }
 }
 
@@ -377,21 +415,21 @@ footer {
 
   .site-header {
 
-   background: linear-gradient(to bottom, transparent), url('../images/banner.png');
+    background: linear-gradient(to bottom, transparent 20%), url('../images/banner.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    background-size: 120%;
+    background-position: -300px -500px;
     text-align: center;
     height: calc(100vh/3);
   }
 
-    .l2 {
+  .l2 {
     mask-image: url("../images/frogandbearpublishing_nobg.png");
     background: rgb(205, 25, 79);
     mask-mode: alpha;
     width: calc(100vh*1.78*2/9);
-    height:  calc(100vh*2/9);
+    height: calc(100vh*2/9);
 
     mask-size: calc(100vh*1.78*2/9) calc(100vh*2/9);
   }
@@ -406,23 +444,20 @@ footer {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: -233px -200px;
     text-align: center;
     height: calc(100vh/3);
   }
 
-  
+
   .l2 {
     mask-image: url("../images/frogandbearpublishing_nobg.png");
     background: rgb(205, 25, 79);
     mask-mode: alpha;
-    width: 50rem;
-    height: 28.125rem;
 
-    mask-size: 50rem 28.125rem;
 
-      width: calc(100vh*1.78*2/9);
-    height:  calc(100vh*2/9);
+    width: calc(100vh*1.78*2/9);
+    height: calc(100vh*2/9);
 
     mask-size: calc(100vh*1.78*2/9) calc(100vh*2/9);
   }
