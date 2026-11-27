@@ -324,6 +324,7 @@ footer {
     background-position: center;
     text-align: center;
     height: calc(100vh/3);
+    width: 100vw;
 
   }
 }
