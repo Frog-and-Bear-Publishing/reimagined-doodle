@@ -302,32 +302,14 @@ footer {
 
 }
 
-@media (min-width: 1440px) {
 
-  .site-header {
+@media only screen and (max-width: 620px) {
 
-    background: linear-gradient(to bottom, transparent 20%), url('../images/banner.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 140%;
-    background-position: -450px -800px;
-    text-align: center;
-    height: calc(100vh/4);
-  }
-}
-
-@media (min-width: 1080px) {
-
-  .site-header {
-
-    background: linear-gradient(to bottom, transparent 20%), url('../images/banner.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 120%;
-    background-position: -250px -800px;
-    text-align: center;
-    height: calc(100vh/3.5);
-
+  /* For mobile phones: */
+  .menu,
+  .main,
+  .right {
+    width: 100%;
   }
 }
 
@@ -346,12 +328,34 @@ footer {
   }
 }
 
-@media only screen and (max-width: 620px) {
+@media (min-width: 1080px) {
 
-  /* For mobile phones: */
-  .menu,
-  .main,
-  .right {
-    width: 100%;
+  .site-header {
+
+    background: linear-gradient(to bottom, transparent 20%), url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 120%;
+    background-position: -250px -800px;
+    text-align: center;
+    height: calc(100vh/3.5);
+
   }
 }
+
+@media (min-width: 1440px) {
+
+  .site-header {
+
+    background: linear-gradient(to bottom, transparent 20%), url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 140%;
+    background-position: -450px -800px;
+    text-align: center;
+    height: calc(100vh/4);
+  }
+}
+
+
+
