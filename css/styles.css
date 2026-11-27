@@ -256,14 +256,14 @@ footer {
   padding: 1rem 1rem;
   font-size: 1.9rem;
   color: rgb(205, 25, 79);
-  background-color: rgba(14, 232, 200, 0.7);
+  background-color: rgba(14, 232, 200, 0.8);
   border-radius: 20px;
   gap: 3rem;
 }
 
 .header-links a:hover {
   color: rgb(87, 14, 65);
-  background-color: rgba(72, 255, 177, 0.7);
+  background-color: rgba(72, 255, 177, 0.8);
 
 }
 
@@ -287,13 +287,13 @@ footer {
   padding: 1rem 1rem;
   font-size: 1.9rem;
   color: rgb(8, 91, 84);
-  background-color: rgba(14, 232, 200, 0.7);
+  background-color: rgba(14, 232, 200, 0.8);
   border-radius: 20px;
 }
 
 .subheader-links a:hover {
   color: rgb(45, 7, 58);
-  background-color: rgba(72, 255, 177, 0.7);
+  background-color: rgba(72, 255, 177, 0.8);
 
 }
 
