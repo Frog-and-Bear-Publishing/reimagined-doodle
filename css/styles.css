@@ -158,7 +158,7 @@ footer {
 
 .site-header {
 
-  background: linear-gradient(to bottom, transparent 20%), url('../images/banner.png');
+  background: linear-gradient(to bottom, url('../images/banner.png') 100%,transparent 20%), url('../images/banner.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 140%;
@@ -338,7 +338,7 @@ footer {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 80%;
-    background-position: -250px -800px;
+    background-position: center;
     text-align: center;
 
   }
