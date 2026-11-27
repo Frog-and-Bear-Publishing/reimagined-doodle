@@ -374,16 +374,24 @@ footer {
 
   .site-header {
 
-    background: linear-gradient(to bottom, transparent 20%), url('../images/banner.png');
+    background: linear-gradient(to bottom, transparent), url('../images/banner.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 140%;
-    background-position: -250px -600px;
+    background-position: -25px -60px;
     text-align: center;
     height: calc(100vh/3);
   }
 
-  
+    .l2 {
+    mask-image: url("../images/frogandbearpublishing_nobg.png");
+    background: rgb(205, 25, 79);
+    mask-mode: alpha;
+    width: calc(100vh*1.78*2/9);
+    height:  calc(100vh*2/9);
+
+    mask-size: calc(100vh*1.78*2/9) calc(100vh*2/9);
+  }
 }
 
 
@@ -391,7 +399,7 @@ footer {
 
   .site-header {
 
-    background: linear-gradient(to bottom, transparent 20%), url('../images/banner.png');
+    background: linear-gradient(to bottom, transparent), url('../images/banner.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
