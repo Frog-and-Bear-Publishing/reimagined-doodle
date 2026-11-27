@@ -176,12 +176,7 @@ footer {
 }
 
 
-.header-links {
-  display: flex;
-  justify-content: center;
-  padding: 10px 3rem;
-  flex-wrap: wrap;
-}
+
 
 .header-logo {
   display: flex;
@@ -245,9 +240,11 @@ footer {
 
 }
 
-.header-links ul {
-  justify-content: space-between;
-
+.header-links {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 3rem;
+  flex-wrap: wrap;
 }
 
 .header-links a {
@@ -280,8 +277,8 @@ footer {
 .subheader-links {
   display: flex;
   justify-content: center;
-  margin: 0 20px 0 20px;
-
+  padding: 2rem 3rem;
+  flex-wrap: wrap;
 }
 
 .subheader-links a {
