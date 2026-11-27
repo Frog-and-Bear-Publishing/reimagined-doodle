@@ -213,8 +213,7 @@ footer {
   mask-mode: alpha;
   width: 500px;
   height: 261.25px;
-  height: calc(100vw/3 - 2rem);
-  width: auto;
+  
   mask-size: 500px 261.25px;
 }
 
@@ -333,6 +332,15 @@ footer {
     width: 100vw;
 
   }
+  .l2 {
+  mask-image: url("../images/frogandbear_nobg.png");
+  background: rgb(205, 25, 79);
+  mask-mode: alpha;
+  width: 400px; 
+  height: 209px;
+  
+  mask-size: 400px 209px;
+}
 }
 
 @media (min-width: 1080px) {
@@ -348,6 +356,15 @@ footer {
     height: calc(100vh/3.5);
 
   }
+  .l2 {
+  mask-image: url("../images/frogandbearpublishing_nobg.png");
+  background: rgb(205, 25, 79);
+  mask-mode: alpha;
+  width: 400px;
+  height: 209px;
+  
+  mask-size: 400px 209px;
+}
 }
 
 @media (min-width: 1440px) {
@@ -362,6 +379,15 @@ footer {
     text-align: center;
     height: calc(100vh/4);
   }
+  .l2 {
+  mask-image: url("../images/frogandbearpublishing_nobg.png");
+  background: rgb(205, 25, 79);
+  mask-mode: alpha;
+  width: 400px;
+  height: 209px;
+  
+  mask-size: 400px 209px;
+}
 }
 
 
