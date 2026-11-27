@@ -328,7 +328,7 @@ footer {
     background-size: 80%;
     background-position: center;
     text-align: center;
-    height: calc(100vh/3);
+    height: calc(100vh/3.5);
     width: 100vw;
 
   }
@@ -354,7 +354,7 @@ footer {
     background-size: 120%;
     background-position: -250px -800px;
     text-align: center;
-    height: calc(100vh/3.5);
+    height: calc(100vh/3);
 
   }
 
@@ -379,7 +379,7 @@ footer {
     background-size: 140%;
     background-position: -450px -800px;
     text-align: center;
-    height: calc(100vh/3);
+    height: calc(100vh/2.5);
   }
 
   
