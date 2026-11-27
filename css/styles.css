@@ -168,7 +168,7 @@ footer {
   background-size: 140%;
   background-position: -450px -800px;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0 0 0;
 }
 
 .site-header p {
@@ -181,7 +181,7 @@ footer {
 .header-links {
   display: flex;
   justify-content: center;
-  padding: 10px 2rem;
+  padding: 10px 3rem;
 
 }
 
