@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 2rem;
-  min-width: 100vw; 
+  min-width: 100vw;
   min-height: 100vh;
   margin: 0;
 }
@@ -259,7 +259,7 @@ footer {
   gap: 3rem;
   margin: 0, 3rem, 0, 3rem;
   margin-right: 30px;
-  
+
 }
 
 .header-links a:hover {
@@ -307,7 +307,7 @@ footer {
 
 @media only screen and (max-width: 620px) {
 
-   .site-header {
+  .site-header {
 
     background: linear-gradient(to bottom, transparent 50%), url('../images/banner.png');
     background-repeat: no-repeat;
@@ -338,6 +338,12 @@ footer {
   .container {
 
     flex-direction: column;
+  }
+
+  header,
+  main,
+  footer {
+    flex: auto;
   }
 }
 
@@ -374,6 +380,12 @@ footer {
   .container {
 
     flex-direction: column;
+  }
+
+  header,
+  main,
+  footer {
+    flex: auto;
   }
 }
 
