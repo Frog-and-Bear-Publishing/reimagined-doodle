@@ -257,7 +257,7 @@ footer {
   background-color: rgba(14, 232, 200, 0.8);
   border-radius: 20px;
   gap: 3rem;
-  margin:0, 10px, 0, 10px;
+  margin:0, 20px, 0, 20px;
 }
 
 .header-links a:hover {
@@ -275,7 +275,7 @@ footer {
 .subheader-links {
   display: flex;
   justify-content: center;
-  margin: 0 10px 0 10px;
+  margin: 0 20px 0 20px;
 
 }
 
@@ -324,6 +324,20 @@ footer {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 120%;
+    background-position: -250px -800px;
+    text-align: center;
+
+  }
+}
+
+@media (min-width: 900px) {
+
+  .site-header {
+
+    background: linear-gradient(to bottom, transparent 20%), url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 80%;
     background-position: -250px -800px;
     text-align: center;
 
