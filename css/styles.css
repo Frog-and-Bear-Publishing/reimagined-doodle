@@ -156,7 +156,7 @@ footer {
 
 .site-header {
 
-  background: linear-gradient(to bottom, url('../images/banner.png'), transparent);
+  background: linear-gradient(to bottom, url('../images/banner.png') 100%, transparent 10%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 140%;
