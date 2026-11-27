@@ -125,13 +125,9 @@ footer {
 .footer-links {
   display: flex;
   justify-content: center;
-
+  flex-wrap: wrap;
 }
 
-.footer-links ul {
-  justify-content: space-between;
-
-}
 
 .footer-links a {
   display: inline-block !important;
